@@ -52,7 +52,7 @@ public class ResponseExm {
         // a specific header ✅
         System.out.println("Specific Header: " + response.getHeader("Content-Type"));
 
-        // list all cookies with names and values ✅        
+        // list all cookies with names and values ✅
         System.out.println("Get All Cookies: ");
         Map<String, String> cookies = response.getCookies();
         System.out.println(cookies);
@@ -64,8 +64,8 @@ public class ResponseExm {
         // map is for inside a single object (key value pairs)
         // list is for the all sets of json objects inside the data array
 
-        //loop through the array ✅
-        for (Map<String,Object> user : dataArray){
+        // loop through the array ✅
+        for (Map<String, Object> user : dataArray) {
             System.out.println("user ID: " + user.get("id"));
         }
 
